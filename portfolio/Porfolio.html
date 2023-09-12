@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<script>
+    const contentBox = document.getElementById('dynamic-box');
+    const contentHeight = contentBox.scrollHeight;
+    contentBox.style.height = contentHeight + 'px';
+</script>
+<style>
+   
+.body {color:#444;font-size:16px;}
+#some-box {background:#fff;padding:40px 0px 80px;font-family:'Open Sans', sans-serif;}
+#some-box h1 {text-align:center;}
+#some-box h3 {font-size:26px;}
+#some-box a {color:#70BCB8;text-decoration:none;display:block;font-weight:bold;}
+#some-box a:hover {color:#8E7BB2;}
+
+article.row {width:100%;max-width:800px;margin:0 auto;padding:45px 0;}
+article.row div {width:49.4%;display:inline-block;position:relative;border:1px solid white;}
+
+
+article.row {border:1px solid white;}
+article.row div:hover {border:1px solid green;}
+
+
+
+#idea-one img, #idea-two img, #idea-three img {position:absolute;bottom:-20px;left:50px;}
+
+@media(max-width:750px){
+
+  article.row div {min-width:300px;width:90%;margin:0 5%;text-align:center;display:block;}
+
+	#some-other-box h3 {text-align:center;}
+
+	#idea-one img, #idea-two img, #idea-three img {position:relative;margin:auto;left:inherit;bottom:inherit;}
+
+  #idea-two {display:-webkit-box;display:-moz-box;display:box;-webkit-box-orient:vertical;-moz-box-orient:vertical;box-orient:vertical;}
+  
+	#idea-two div:first-of-type {-webkit-box-ordinal-group:2;-moz-box-ordinal-group:2;box-ordinal-group:2;}
+}
+
+</style>
+<body style="background-color:#e5e5e5;">
+    <div>
+        <nav>
+            <div class="flex flex-row h-fix w-fix p-2 text-2xl text-slate-600">
+                <button type="button" class="basis-1/4 box-border h-22 w-40 p-4 font-serif hover:bg-neutral-400 cursor-progress" ><a href="./Home.html">Home</a></button>
+                <button type="button" class="basis-1/4 box-border h-22 w-40 p-4 font-serif hover:bg-neutral-400 cursor-progress"><a href="./Porfolio.html">Portfolio</a></button>
+                <button type="button" class="basis-1/4 box-border h-22 w-40 p-4 font-serif hover:bg-neutral-400 cursor-progress"><a href="Contactme.HTML">Contact Me</a></button>
+                <button type="button" class="basis-1/4 box-border h-22 w-40 p-4 font-serif hover:bg-neutral-400 cursor-progress"><a href="Aboutme.html">About Me</a></button>
+              </div>
+        </nav>
+        <div class="flex flex-row  h-fix w-fix p-4 text-2xl justify-center">
+        <div class="p-35 border-2 border-slate-600 contentBox body" id="dynamic-box">
+            <div id="some-box">
+                <h1 class="text-5xl font-serif text-slate-700 font-center"><b>Portfolio</b></h1>
+              
+                  <article class="row" id="idea-one">
+                      <div><img src="./images/Aboutme.png"/></div>
+                      <div>
+                          <h3>Who i am?</h3>
+                          <p>As an enthusiastic BICT (Hons) undergraduate with a passion for technology, I aspire to excel as a Full stack Developer and Database Management professional. Eager to contribute creativity and technical expertise to optimize data-driven solutions, 
+                            I seek an innovative team to learn, grow, and make a meaningful impact in technology.</p>
+                      </div>
+                  </article>
+              
+                  <article class="row" id="idea-two">
+                      <div>
+                          <h3>Education</h3>
+                          <p>I successfully 
+                            finished my G.C.E.Advance level at Highlands college, Hatton and G.C.E.Ordinary level at St.Gabriel's Girls College Hatton. I have a 
+                            Diploma in English which i finished at metropolitan college, Dehiwala</p>
+
+                      </div>
+                      <div><img src="./images/Education.png"/></div>
+                  </article>
+
+                  <article class="row" id="idea-one">
+                    <div><img src="./images/Language.png"/></div>
+                    <div>
+                        <h3>Languages</h3>
+                        <p>I am fluent in three languages, including English, Tamil, and Sinhala, allowing me to effectively communicate 
+                            and collaborate with diverse audiences.</p>
+                    </div>
+                </article>
+            
+              
+                  <article class="row" id="idea-one">
+                      <div><img src="./images/Expert.jpg"/></div>
+                      <div>
+                          <h3>Expertise</h3>
+                          <p><b>Programming Languages</b><br>
+                        C#<br>
+                        C++<br>
+                    Java<br>
+                    <b>Web Development HTML</b><br>
+                        HTML<br>
+                        CSS<br>
+                    JavaScript<br>
+                    PHP<br>
+                </p>
+                      </div>
+                  </article>
+              
+                  <article class="row" id="idea-two">
+                    <div><img src="./images/Expert.jpg"/></div>
+                    <div>
+                        <p><b>Editing & Graphical Tools</b><br>
+                      Adobe XD<br>
+                      Canva<br>
+                  Auto CAD<br>
+                  <b>Web Development Framework</b><br>
+                      Bootstrap<br>
+                      Tailwind CSS<br>
+                  DJango<br>
+              </p>
+                    </div>
+                </article>
+
+                <article class="row" id="idea-two">
+                    <div><img src="./images/Expert.jpg"/></div>
+                    <div>
+                        <p><b>Database Management</b><br>
+                      SQL<br>
+                  <b>IDE & Tools</b><br>
+                     VS Code<br>
+                     XAMPP><br>
+                     Visual Studio<br>
+                     Tally Prime<br>
+                     Notepad++<br>
+                     Keil<br>
+              </p>
+                    </div>
+                </article>
+
+                
+            
+              </div>
+        </div>
+    </div>
+    <footer>
+        <p class="text-center">&copy; 2023 Janani Thavarajah. All rights reserved.</p>
+    </footer>
+    </div>
+</body>
+</html>

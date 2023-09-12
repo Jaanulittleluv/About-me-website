@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<script>
+    const contentBox = document.getElementById('dynamic-box');
+    const contentHeight = contentBox.scrollHeight;
+    contentBox.style.height = contentHeight + 'px';
+</script>
+<style>
+   .body {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font: 500 100%/1.5 system-ui;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+</style>
+<body style="background-color:#e5e5e5;">
+    <div>
+        <nav>
+            <div class="flex flex-row h-fix w-fix p-2 text-2xl text-slate-600">
+                <button type="button" class="basis-1/4 box-border h-22 w-40 p-4 font-serif hover:bg-neutral-400 cursor-progress" ><a href="./Home.html">Home</a></button>
+                <button type="button" class="basis-1/4 box-border h-22 w-40 p-4 font-serif hover:bg-neutral-400 cursor-progress"><a href="./Porfolio.html">Portfolio</a></button>
+                <button type="button" class="basis-1/4 box-border h-22 w-40 p-4 font-serif hover:bg-neutral-400 cursor-progress"><a href="Contactme.HTML">Contact Me</a></button>
+                <button type="button" class="basis-1/4 box-border h-22 w-40 p-4 font-serif hover:bg-neutral-400 cursor-progress"><a href="Aboutme.html">About Me</a></button>
+              </div>
+        </nav>
+        <div class="flex flex-row  h-fix w-fix p-4 text-2xl justify-center">
+        <div class="p-35 border-2 border-slate-600 contentBox body" id="dynamic-box">
+            <h1 class="text-5xl font-serif text-slate-700 font-center"><b>Janani Thavarajah</b></h1><br>
+            <img src='./images/my.jpg' width="400" height="300" alt=''>
+<p class="font-serif">Iam a undergraduate student at University of Vavuniya enrolled 
+    in BICT degree from Hatton, Sri-Lanka. </p>
+
+<img src='./images/img1.jpg' width="400" height="300" alt=''>
+<p class="font-serif">I'm a passionate and dedicated professional always looking for exciting new challenges and opportunities to 
+    collaborate on interesting projects.</p>
+
+<img src='./images/img2.jpg' width="400" height="300" alt=''>
+<p class="font-serif">I thrive on creativity and innovation and am committed to delivering exceptional results. 
+    Explore my portfolio to see my work,</p>
+
+    <img src='./images/img3.jpg' width="400" height="300" alt=''>
+<p class="font-serif">and if you have a project in mind or want to discuss potential collaborations, please don't hesitate
+    to reach out.</p>
+        </div>
+    </div>
+    <footer>
+        <p class="text-center">&copy; 2023 Janani Thavarajah. All rights reserved.</p>
+    </footer>
+    </div>
+</body>
+</html>

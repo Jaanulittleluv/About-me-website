@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<script>
+    const contentBox = document.getElementById('dynamic-box');
+    const contentHeight = contentBox.scrollHeight;
+    contentBox.style.height = contentHeight + 'px';
+</script>
+<style>
+   .body {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font: 500 100%/1.5 system-ui;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+</style>
+<body style="background-color:#e5e5e5;">
+    <div>
+        <nav>
+            <div class="flex flex-row h-fix w-fix p-2 text-2xl text-slate-600">
+                <button type="button" class="basis-1/4 box-border h-22 w-40 p-4 font-serif hover:bg-neutral-400 cursor-progress" ><a href="./Home.html">Home</a></button>
+                <button type="button" class="basis-1/4 box-border h-22 w-40 p-4 font-serif hover:bg-neutral-400 cursor-progress"><a href="./Porfolio.html">Portfolio</a></button>
+                <button type="button" class="basis-1/4 box-border h-22 w-40 p-4 font-serif hover:bg-neutral-400 cursor-progress"><a href="Contactme.HTML">Contact Me</a></button>
+                <button type="button" class="basis-1/4 box-border h-22 w-40 p-4 font-serif hover:bg-neutral-400 cursor-progress"><a href="Aboutme.html">About Me</a></button>
+              </div>
+        </nav>
+        <div class="flex flex-row  h-fix w-fix p-4 text-2xl justify-center">
+        <div class="p-35 border-2 border-slate-600 contentBox body" id="dynamic-box">
+            <img src='./images/img4.jpg' width="400" height="300" alt=''>
+            <p class="font-serif"><b>Let's Get In Touch</b><br>If you're interested in working together or have any inquiries, please feel free to contact me. I'd love to hear from you!<br>
+                <img src="./images/mail.jpg" class="h-6 w-6 object-scale-down drop-shadow-2xl "><a href="mailto:janani99824@gmail.com">janani99824@gmail.com</a><br>
+                <img src="./images/linkedin.jpg" class="h-6 w-6 object-scale-down drop-shadow-2xl "><a href="https://www.linkedin.com/in/janani-thavarajah-52987a1b2">Janani Thavarajah</a><br>
+                <img src="./images/github.png" class="h-6 w-6 object-scale-down drop-shadow-2xl "><a href="https://github.com/Jaanulittleluv">Jaanulittleluv</a></p>
+    
+
+        </div>
+    </div>
+    <footer>
+        <p class="text-center">&copy; 2023 Janani Thavarajah. All rights reserved.</p>
+    </footer>
+    </div>
+</body>
+</html>
